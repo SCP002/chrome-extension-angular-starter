@@ -1,0 +1,19 @@
+# Ignore everything
+/*
+
+# Not these files
+!/.editorconfig
+!/.gitattributes
+!/.gitignore
+!/angular.json
+!/gulpfile.js
+!/LICENSE
+!/package-lock.json
+!/package.json
+!/README.md
+!/tsconfig.json
+!/tslint.json
+
+# Not these directories
+!/e2e
+!/src

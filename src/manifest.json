@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Angular Starter Extension",
+  "version": "1.0.0",
+  "permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ],
+  "background": {
+    "page": "index.html#/background",
+    "persistent": false
+  },
+  "options_ui": {
+    "page": "index.html#/options",
+    "open_in_tab": false
+  },
+  "browser_action": {
+    "default_title": "Open Popup!",
+    "default_popup": "index.html#/popup"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "web_accessible_resources": [
+    "index.html"
+  ]
+}
